@@ -24,11 +24,9 @@ long candies(int n, vector<int> arr) {
                 continue;
             }
             temp[i]=temp[i+1]+1;
-            ans++;
             j=i-1;
             while(j>=0 && arr[j]>arr[j+1] && temp[j]<=temp[j+1]){
                 temp[j]=temp[j+1]+1;
-                ans++;
                 j--;
             }
         }
